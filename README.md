@@ -1,2 +1,2 @@
 # Lab-Binus
-this is my assignment lab coriusity
+my assignment lab coriusity
