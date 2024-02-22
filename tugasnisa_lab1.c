@@ -1,14 +1,15 @@
 #include <stdio.h>
+// untuk mengukur durasi eksekusi program
 #include <time.h>
 
 int custom_random() {
     // timestamp saat ini sebagai seed
+    //unsigned int bilangan bulat non negatif
     unsigned int seed = (unsigned int)time(NULL);
-    
-    unsigned int a = 1664525;
-    unsigned int c = 1013904223;
-    // rumus
-    int number = (seed * a + c + 7931) % 6 + 1 ;
+
+    // rumusnya
+    int number = (seed * seed / 1000000) % 6 + 1;
+    //Mengembalikan nilai angka random yang dihasilkan oleh fungsi 
     return number;
 }
 
